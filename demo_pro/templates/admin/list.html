@@ -18,16 +18,16 @@
     </tr>
     </thead>
     <tbody>
-    {% for book in page %}<!--book maatti page kodukkunnu for pagination-->
+    {% for user in page %}<!--book maatti page kodukkunnu for pagination-->
 
 
     <tr align="center">
         <th scope="row" >{{ forloop.counter }}</th>
         <td></td>
-        <td>{{book.username}}</td>
-        <td>{{book.first_name}}</td>
-        <td>{{book.last_name}}</td>
-        <td>{{book.email}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.first_name}}</td>
+        <td>{{user.last_name}}</td>
+        <td>{{user.email}}</td>
 
         <td>
         <a href="{% url 'update' book.id %}" class="btn btn-success">Update</a>
